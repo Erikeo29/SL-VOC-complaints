@@ -1,0 +1,16 @@
+{
+  "defect_types": {
+    "solder_defect": ["solder void", "cold solder", "bridging", "insufficient solder"],
+    "dimensional": ["out of tolerance", "warpage", "misalignment"],
+    "contamination": ["foreign particle", "residue", "oxidation"],
+    "electrical": ["open circuit", "short circuit", "high resistance"],
+    "mechanical": ["bent pin", "crack", "delamination"],
+    "biocompatibility": ["cytotoxicity", "sensitization", "irritation"],
+    "packaging_delivery": ["damage in transit", "wrong quantity", "labeling error"]
+  },
+  "severity_levels": {
+    "critical": "Safety risk or regulatory impact, immediate action required",
+    "major": "Significant functional impact, corrective action needed",
+    "minor": "Cosmetic or minor functional impact, monitoring"
+  }
+}

@@ -1,0 +1,31 @@
+complaint_id,date,product_line,customer,complaint_text,severity,defect_type,lot_number,production_line
+C-001,2025-03-15,flex_connector,Customer_A,"Received batch with visible solder voids on 12% of units. Connector pads show incomplete wetting, affecting reliability.",,,LOT-2025-042,Line_1
+C-002,2025-04-02,biosensor_assembly,Customer_B,"Biosensor strips exhibit inconsistent electrode thickness. Measured values range from 45 to 78 nm versus spec 50-60 nm.",,,LOT-2025-058,Line_3
+C-003,2025-04-18,microconnector,Customer_C,"Multiple connectors show bent pins after unpacking. 8 out of 200 units affected. Suspect packaging issue.",,,LOT-2025-071,Line_2
+C-004,2025-05-10,flex_connector,Customer_D,"Dimensional check failed: flex circuit width 5.12 mm vs specification 5.00 +/- 0.05 mm. Entire lot rejected.",,,LOT-2025-089,Line_1
+C-005,2025-05-22,PCB_module,Customer_E,"High resistance measured on PCB trace between pads 3 and 7. Values 2.3 ohm vs max 0.5 ohm spec.",,,LOT-2025-095,Line_2
+C-006,2025-06-08,biosensor_assembly,Customer_A,"Foreign particle contamination found under microscope on 3 biosensor assemblies. Particles appear metallic.",,,LOT-2025-103,Line_3
+C-007,2025-06-20,flex_connector,Customer_F,"Cold solder joints observed on flex connector terminals. Pull test failures at 1.2 N vs minimum 2.0 N requirement.",,,LOT-2025-112,Line_2
+C-008,2025-07-05,microconnector,Customer_B,"Connector housing shows crack after thermal cycling test. Failure at 150 cycles vs 500 cycle requirement.",,,LOT-2025-118,Line_1
+C-009,2025-07-19,PCB_module,Customer_G,"Short circuit detected between adjacent traces on PCB module. 5 out of 100 units affected in incoming inspection.",,,LOT-2025-125,Line_3
+C-010,2025-08-01,biosensor_assembly,Customer_C,"Cytotoxicity test failed for biosensor assembly. Cell viability dropped to 62% vs minimum 80% requirement per ISO 10993.",,,LOT-2025-131,Line_2
+C-011,2025-08-15,flex_connector,Customer_H,"Surface oxidation visible on gold-plated contacts. Discoloration noted on approximately 20% of connector pads.",,,LOT-2025-140,Line_1
+C-012,2025-09-03,microconnector,Customer_D,"Received wrong quantity: PO specified 5000 units, shipment contained only 4200. Packing list shows 5000.",,,LOT-2025-152,Line_2
+C-013,2025-09-18,PCB_module,Customer_E,"Delamination observed on PCB module after reflow soldering. Layers separating at edges of 15% of boards.",,,LOT-2025-161,Line_3
+C-014,2025-10-02,flex_connector,Customer_A,"Warpage on flex connector exceeds 0.3 mm vs max 0.1 mm specification. Assembly line rejection rate increased to 8%.",,,LOT-2025-170,Line_1
+C-015,2025-10-20,biosensor_assembly,Customer_F,"Labeling error: lot number on box does not match lot number on individual biosensor packaging. Traceability concern.",,,LOT-2025-178,Line_2
+C-016,2025-11-05,microconnector,Customer_G,"Misalignment of connector pins. Pin pitch measured 0.52 mm vs nominal 0.50 mm. Mating with PCB socket fails.",,,LOT-2025-185,Line_3
+C-017,2025-11-18,flex_connector,Customer_B,"Solder bridging between adjacent pads on flex connector. Electrical short detected during final test.",,,LOT-2025-192,Line_2
+C-018,2025-12-01,PCB_module,Customer_H,"Residue observed on PCB surface after cleaning. Ionic contamination test shows 2.1 ug/cm2 NaCl eq. vs max 1.56.",,,LOT-2025-198,Line_1
+C-019,2025-12-15,biosensor_assembly,Customer_C,"Sensitization concern raised after patient reported mild skin reaction near biosensor application site.",,,LOT-2025-205,Line_3
+C-020,2025-12-28,flex_connector,Customer_D,"Damage in transit: 3 reels of flex connectors arrived with crushed packaging. Visual inspection shows bent leads on outer layers.",,,LOT-2025-210,Line_2
+C-021,2026-01-05,flex_connector,Customer_A,"Solder void defects detected on flex connector batch. X-ray inspection shows voids exceeding 25% of pad area on Line 2 production.",,,LOT-2026-003,Line_2
+C-022,2026-01-08,microconnector,Customer_E,"Cold solder joints found on microconnector terminals produced on Line 2. Failure rate 15% in pull testing.",,,LOT-2026-008,Line_2
+C-023,2026-01-10,flex_connector,Customer_F,"Insufficient solder on flex connector pads. Solder paste volume approximately 40% below nominal. Line 2 production run.",,,LOT-2026-012,Line_2
+C-024,2026-01-12,PCB_module,Customer_G,"Open circuit detected on PCB module trace. Suspect solder reflow issue on Line 2. 8% failure rate at ICT.",,,LOT-2026-015,Line_2
+C-025,2026-01-15,flex_connector,Customer_B,"Solder bridging on fine-pitch flex connector pads. Multiple shorts between 0.3 mm pitch pads. Line 2 batch.",,,LOT-2026-019,Line_2
+C-026,2026-01-18,biosensor_assembly,Customer_H,"Electrode delamination on biosensor strip. Adhesion test shows peel strength 0.8 N/cm vs minimum 1.5 N/cm.",,,LOT-2026-022,Line_3
+C-027,2026-01-22,flex_connector,Customer_C,"Cold solder on flex connector batch from Line 2. Visual inspection shows dull, grainy solder joints on 22% of units.",,,LOT-2026-028,Line_2
+C-028,2026-01-25,microconnector,Customer_D,"Connector pins out of tolerance. Length variation +/- 0.08 mm vs spec +/- 0.02 mm. Mating force excessive.",,,LOT-2026-031,Line_1
+C-029,2026-02-01,PCB_module,Customer_A,"Irritation reported by end user at device contact point. Biocompatibility retest requested per ISO 10993-10.",,,LOT-2026-035,Line_3
+C-030,2026-02-10,flex_connector,Customer_E,"Foreign particle found embedded in flex circuit dielectric layer. Particle analysis pending. Production halted for investigation.",,,LOT-2026-040,Line_1
