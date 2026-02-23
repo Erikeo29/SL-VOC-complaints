@@ -1,3 +1,20 @@
+cookie:
+  expiry_days: 30
+  key: voc_complaints_secret_key_change_me
+  name: voc_complaints_auth
+
+credentials:
+  usernames:
+    LXS:
+      email: lxs@example.com
+      failed_login_attempts: 0
+      first_name: LXS
+      last_name: User
+      logged_in: false
+      password: $2b$12$qnXXggJi.Ie7886qQJhk/e9gVIUe7XMrPewlWwskQamA93YL0veFm
+      roles:
+        - admin
+
 app:
   name: "VOC Complaints Analyzer"
   version: "1.0.0"

@@ -7,6 +7,9 @@ import os
 
 import pandas as pd
 import streamlit as st
+import streamlit_authenticator as stauth
+import yaml
+from yaml.loader import SafeLoader
 
 # --- Configuration de la page (DOIT etre en premier) ---
 st.set_page_config(
@@ -15,6 +18,27 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+# --- Authentification ---
+_cfg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yaml")
+with open(_cfg_path) as _f:
+    _auth_config = yaml.load(_f, Loader=SafeLoader)
+
+authenticator = stauth.Authenticate(
+    _auth_config["credentials"],
+    _auth_config["cookie"]["name"],
+    _auth_config["cookie"]["key"],
+    _auth_config["cookie"]["expiry_days"],
+)
+
+authenticator.login()
+
+if not st.session_state.get("authentication_status"):
+    if st.session_state.get("authentication_status") is False:
+        st.error("Identifiants incorrects / Invalid credentials")
+    else:
+        st.info("Entrez vos identifiants / Enter your credentials")
+    st.stop()
 
 # --- Imports locaux ---
 from config import ASSETS_PATH, CSS_PATH, DOC_PATH, VERSION, VERSION_DATE
@@ -146,6 +170,7 @@ def render_sidebar() -> None:
     """Affiche la sidebar avec titre, langue et statistiques."""
     with st.sidebar:
         st.title(t("sidebar_title"))
+        authenticator.logout(location="sidebar")
         st.caption(t("app_subtitle"))
 
         st.divider()
